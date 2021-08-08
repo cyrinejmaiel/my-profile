@@ -1,0 +1,431 @@
+<h1>hello, class!!!!<h1/>
+<meta property="og:title" content="Le Wagon | World's Best Coding School">
+<meta property="og:image" content="facebook-card.jpg">
+<meta property="og:description" content="Le Wagon is the best coding school for entrepreneurs. Checkout by yourself the projects of our students.">
+<meta property="og:site_name" content="Le Wagon"/>
+<ul>
+  <li>
+    <a href="#">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fab fa-linkedin-in"></i> Linkedin
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+  </li>
+</ul>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+selector {         /* Select elements of your page */
+  property: value; /* Design a first property */
+	property: value; /* Then a second */
+	property: value; /* Etc... */
+}
+h2 {
+  color: red;
+	font-size: 20px;
+	font-family: Helvetica;
+}
+
+color: #FF530D;
+color: rgb(255, 83, 13);
+color: rgba(255, 83, 13, 1.0);
+CSS summary
+This is a summary of the basic concepts of CSS covered in the previous video.
+
+Linking a stylesheet
+When writing your design in a CSS file (like style.css), don’t forget to link this CSS file in the <head> of your HTML document like this:
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+CSS core syntax
+The core syntax of CSS is this one:
+
+selector {         /* Select elements of your page */
+  property: value; /* Design a first property */
+	property: value; /* Then a second */
+	property: value; /* Etc... */
+}
+For instance to design all <h2>:
+
+h2 {
+  color: red;
+	font-size: 20px;
+	font-family: Helvetica;
+}
+CSS properties
+Colors
+You can either use the hexadecimal or the RGB system to encode your color. The A relates to Opacity, on a scale of 0 to 1. So 1 is totally opaque, and your colour will become more transparent as you move towards 0:
+
+color: #FF530D;
+color: rgb(255, 83, 13);
+color: rgba(255, 83, 13, 1.0);
+RGB grey scale
+If you use the same values for R,G and B then you will get a grey:
+
+body {
+  color: rgb(0, 0, 0);        /* black */
+  color: rgb(30, 30, 30);     /* dark grey */
+  color: rgb(120, 120, 120);  /* medium grey */
+  color: rgb(240, 240, 240);  /* light grey */
+  color: rgb(255, 255, 255);  /* white */
+}
+body {
+  color: rgb(10, 10, 10);     /* Text color */
+	background-color: #DFDDDF;  /* Background color */
+}
+body {
+  font-family: Times, serif;
+	font-family: Arial, sans-serif;
+	font-family: Courier, monospace;
+}
+body {
+  font-size: 30px;
+	line-height: 1.8;
+	letter-spacing: 1px;
+}
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- Page's intelligence = meta tags -->
+  </head>
+  <body>
+		<!-- Page's content = displayed on the page -->
+  </body>
+</html>
+<head>
+	<title>Page Title. Maximum length 60-70 characters</title>
+	<meta name="description" content="Page description. No longer than 155 characters.">
+	<meta charset="utf-8">
+</head>
+<meta property="og:title" content="Le Wagon | World's Best Coding School">
+<meta property="og:image" content="facebook-card.jpg">
+<meta property="og:description" content="Le Wagon is the best coding school for entrepreneurs. Checkout by yourself the projects of our students.">
+<meta property="og:site_name" content="Le Wagon"/>
+<a href="https://www.lewagon.com">Le Wagon</a>
+HTML summary
+This cheatsheet is a summary of all the important concepts of HTML which are covered in the previous videos.
+
+HTML Skeleton
+Every HTML page is structured with the same skeleton
+
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- Page's intelligence = meta tags -->
+  </head>
+  <body>
+		<!-- Page's content = displayed on the page -->
+  </body>
+</html>
+The meta tags go into the <head>
+The page content goes into the <body>
+Most important meta tags to put in the <head> are the title, description and charset:
+
+<head>
+	<title>Page Title. Maximum length 60-70 characters</title>
+	<meta name="description" content="Page description. No longer than 155 characters.">
+	<meta charset="utf-8">
+</head>
+An example:
+
+<head>
+  <title>Le Wagon | World's Best Coding School</title>
+  <meta name="description" content="Le Wagon is the best coding school for entrepreneurs">
+  <meta charset="utf-8">
+</head>
+Of course, be smart and include the important SEO keywords of your industry in the meta tags. For instance, the words “coding” and “school” are very important for Le Wagon since lots of people are searching for these exact words on Google, hence we use these words in the title and description of our page.
+
+Facebook meta tags
+Facebook use different meta tags to display a nice title, description and image when you’re sharing a page on Facebook
+
+<meta property="og:title" content="Le Wagon | World's Best Coding School">
+<meta property="og:image" content="facebook-card.jpg">
+<meta property="og:description" content="Le Wagon is the best coding school for entrepreneurs. Checkout by yourself the projects of our students.">
+<meta property="og:site_name" content="Le Wagon"/>
+Test your meta tags
+You can use these tools to test the meta tags of a page:
+
+Facebook Debugger
+Google Structured Data Testing Tool
+HTML Basic Syntax
+The basic syntax of an HTML element is:
+
+<element attribute="value">Content</element>
+Let’s see an example of this syntax on a link:
+
+<a href="https://www.lewagon.com">Le Wagon</a>
+The result of this link displayed on the page will be:
+Le Wagon
+
+Most common HTML elements
+Headers
+
+<h1>[...]</h1>  <!-- Only one per page! SEO important -->
+<h2>[...]</h2>
+<h3>[...]</h3>
+<h4>[...]</h4>
+<h5>[...]</h5>
+<h6>[...]</h6>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Veritatis laboriosam mollitia autem at ab omnis iure quis
+  asperiores inventore eos nam aut iusto officiis deserunt
+  nihil, sequi tempore impedit quae?
+</p>
+
+<p>
+  You can emphasize <em>some words</em>,
+  and even <strong>more if needed</strong>
+</p>
+<!-- Bullet points -->
+<h2>Shopping List</h2>
+<ul>
+  <li>Milk</li>
+  <li>Butter</li>
+</ul>
+
+<!-- Numbers -->
+<h2>World Cup 2018</h2>
+<ol>
+  <li>France</li>
+  <li>Uruguay</li>
+  <li>Belgium</li>
+  <li>England</li>
+</ol>
+<a href="https://lewagon.com" target="_blank">Le Wagon</a>
+<img src="logo.png" alt="Le Wagon logo">
+<form>
+  <input type="email">
+  <input type="password">
+  <input type="submit" value="Sign up">
+</form>
+<head>
+	<title>Boris Paillard's profile</title>
+	<meta name="description" content="This is Boris' profile">
+	<meta charset="UTF-8">
+
+	<!-- Link your stylesheet here -->
+	<link rel="stylesheet" href="style.css">
+</head>
+h1, h2, h3 {
+  font-family: "Helvetica", sans-serif; /* if all headers use Helvetica */
+}
+Design your profile
+Add simple CSS rules to design fonts and colors of your profile page like in the previous videos. At the end, your profile should look like this:
+
+Screen Shot 2018-08-12 at 20.59.32.png
+
+Of course, feel free to choose different fonts and colors and be creative 😎🌈!
+
+Getting started
+We will keep working on our profile from the last lesson, so normally you should already have it on you computer. Remember:
+
+Save your work regularly.
+Check the index.html file on Google to see how you are progressing.
+Link the stylesheet in the <head>
+If you haven’t done it before, create your style.css file at the root of your project. Don’t forget to link this CSS file at the end of the <head> of your HTML.
+
+<head>
+	<title>Boris Paillard's profile</title>
+	<meta name="description" content="This is Boris' profile">
+	<meta charset="UTF-8">
+
+	<!-- Link your stylesheet here -->
+	<link rel="stylesheet" href="style.css">
+</head>
+1. Design the body
+Here are some design tasks to complete on the body:
+
+Set a nice background-color.
+Set a nice font-family, color, font-size and line-height for default texts.
+You can use a colorpicker for colors and Google Fonts for fonts (you can watch the corresponding videos).
+Tips: Defining your default CSS rules for the body directly is a way to avoid repeating the same CSS code for all elements (<p>, <li>, etc…). It will make your CSS code shorter and more readable.
+
+2. Design headers h1, h2, h3
+Here are some design tasks to complete:
+
+Choose a nice color and font-family for headers (<h1>, <h2>, <h3>)
+Choose harmonious font-size, line-height and letter-spacing for headers
+Tips:
+
+Small headers are more elegant. If you check out any website (Medium, Airbnb, etc.), you’ll see that the font-size of their headers is quite small.
+For common design rules between all headers, you can group selectors in CSS like this:
+h1, h2, h3 {
+  font-family: "Helvetica", sans-serif; /* if all headers use Helvetica */
+}
+3. Design links a
+Here are some design tasks to complete:
+
+Change the color & text-decoration of all the links
+Add hover effects to links using the pseudo-class a:hover.
+Tip: For a smooth transition when you hover on a link you can use a CSS transition. Here is the code:
+
+a {
+  color: yellow;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+body {
+  color: blue;
+}
+h1 {
+  color: red;
+}
+<img src="logo.png" id="logo">
+#logo { /* select the element with the id="logo" */
+  width: 40px;
+}
+<img src="john.png" class="img-circle">
+<img src="ringo.png" class="img-circle">
+<img src="george.png" class="img-circle">
+<img src="paul.png" class="img-circle">
+.img-circle { /* select all elements with the class="img-circle" */
+  border-radius: 50%;
+}
+<img src="john.png" class="img-circle img-bordered">
+<img src="ringo.png" class="img-circle img-bordered">
+<img src="george.png" class="img-circle img-bordered">
+<img src="paul.png" class="img-circle img-bordered">
+.img-circle {
+  border-radius: 50%;
+}
+.img-bordered {
+  border: 10px solid red;
+}
+h2 { /* select all <h2> elements */
+  color: red;
+}
+.text-justify { /* select all elements with class="justify" */
+  text-align: justify;
+}
+#banner { /* select the unique element with id="banner" */
+  background-image: url("example.jpg");
+}
+<ul id="donald-nephews">
+	<li>Dewey</li>
+	<li>Louie</li>
+	<li>Huey</li>
+</ul>
+
+<ul>
+	<li>Bigtime Beagle</li>
+	<li>Burger Beagle</li>
+	<li>Bouncer Beagle</li>
+	<li>Baggy Beagle</li>
+</ul>
+#donald-nephews li {
+  color: red;
+}
+/* style.css */
+h1 {
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+}
+[...]
+p {                
+  color: black;
+}
+.text-red {   
+  color: red;
+}
+#bio {             
+  color: green;
+}
+margin: 80px; /* will put 80px of margin everywhere */
+padding: 40px; /* will put 40px of padding everywhere */
+margin: 80px 0px 40px 16px; /* top: 80px, right: 0px, bottom: 40px, left: 16px*/
+border: 1px solid red;
+border-top: 1px solid red;
+border-right: 2px dotted black;
+border-bottom: 1px dashed green;
+border-left: 2px dotted black;
+border-top: 1px solid rgba(0, 0, 0, 0.1); /* elegant border: thin and subtle */
+box-shadow: 2px 2px 3px red; /* horizontal-shift vertical-shift blur color */
+background: white;                         /* White background */
+padding: 30px;                             /* Internal space */
+border-radius: 4px;                        /* Small radius */
+box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+width: 300px;     /* Fix the width first*/
+margin: 0px auto; /* Let CSS compute the same left & right margins automatically*/
+<div class="container">
+  <div class="card-white">
+    <!-- introduction -->
+	</div>
+  <div class="card-white">
+		<!-- first section -->
+	</div>
+  <div class="card-white">
+		<!-- second section -->
+  </div>
+  <div class="card-white">
+		<!-- last section -->
+	</div>
+   <div class="card-white">
+		<!-- footer -->
+	</div>
+</div>
+.container {
+  width: 700px; /* set the width of your container */
+  margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+#home-page-first-image {
+  border-radius: 50%;
+}
+.home-card {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.text-center {
+  text-align: center;
+}
+.card-white {
+  background: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
+}
+.list-inline > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 20px; /* add som left/right padding between list items */
+}
